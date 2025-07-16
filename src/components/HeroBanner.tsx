@@ -8,8 +8,10 @@ export const HeroBanner = () => {
           'url("/assets/crochet-hero-banner.png") center/cover no-repeat',
         color: "white",
         textAlign: "center",
-        py: 10,
-        height: 400,
+        py: {
+          xs: 2,
+          md: 15,
+        },
       }}
     >
       <Typography variant="h2" fontWeight="bold">
@@ -19,7 +21,7 @@ export const HeroBanner = () => {
         A creative, calming hobby that stitches together health, happiness, and
         handmade charm.
       </Typography>
-      <Button variant="contained" color="primary" href="#ideas">
+      <Button variant="contained" color="primary" href="#ideas" sx={{}}>
         Explore Projects
       </Button>
     </Box>

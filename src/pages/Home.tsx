@@ -21,7 +21,15 @@ export const Home = () => {
               { icon: "🎁", text: "Creates thoughtful gifts" },
               { icon: "🌿", text: "Eco-friendly crafting" },
             ].map((item, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid
+                item
+                size={{
+                  xs: 6,
+                  sm: 4,
+                  md: 2,
+                }}
+                key={index}
+              >
                 <Box textAlign="center" px={2}>
                   <Typography variant="h3">{item.icon}</Typography>
                   <Typography variant="subtitle1" mt={1}>

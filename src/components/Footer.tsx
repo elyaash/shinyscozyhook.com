@@ -10,12 +10,12 @@ export const Footer = () => {
       </Typography>
       <Typography variant="body2">
         <Link href="/about-us" m={1}>
-          About US
+          About Me
         </Link>
-        |
+        {/* |
         <Link href="/contact-us" m={1}>
           Contact Us
-        </Link>
+        </Link> */}
       </Typography>
     </Box>
   );
